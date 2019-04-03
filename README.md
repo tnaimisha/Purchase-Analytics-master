@@ -22,6 +22,7 @@ We have two files products.csv and order_products.csv
 
 ## Preprocessing
 
+README.md is provided for all the tests in insight-testsuite.
 * Handles multiple double quotes, multiple commas than the number of fields in the files
 * Handles missing records/mappings in products.csv file
 * Handles junk data in all the fields in order_products.csv and only the product_id and department_id fields in products.csv file. This is with the assumption that product_name and aisle_id can have alphanumeric values(we see aisle_ids in alphabetical, numerical or a combination of both in the usual stores like Safeway)
@@ -31,6 +32,11 @@ We can implement this if we have more information on the orders file - For examp
 
 ## Dependencies
 
+* Standard java utilities library for data structures like hashmap and queues.
+* FileReader and FileWriter IO utilities.
+* JUnit 4 library for unit test cases. This will not be need for testing the code functionality.
 
 ## Run Instructions
 
+* For testing with the files present in input directory under root, go to /Purchase-Analytics-master folder and type ./run.sh
+* For testing with all the tests in insight_testsuite, go to insight_testsuite directory and type ./run_tests.sh
