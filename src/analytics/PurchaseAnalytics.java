@@ -33,7 +33,7 @@ public class PurchaseAnalytics {
 		productsInfo.close();
 		
 		//setting up the path for second input file
-		BufferedReader ordersInfo = new BufferedReader(new FileReader(file.getParent() + "/input/order_products__prior.csv"));
+		BufferedReader ordersInfo = new BufferedReader(new FileReader(file.getParent() + "/input/order_products.csv"));
 		
 		//ignoring the header
 		String cleanedOrderDetails = ordersInfo.readLine();
