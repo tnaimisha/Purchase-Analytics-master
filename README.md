@@ -27,8 +27,8 @@ README.md is provided for all the tests in insight-testsuite.
 * Handles missing records/mappings in products.csv file
 * Handles junk data in all the fields in order_products.csv and only the product_id and department_id fields in products.csv file. This is with the assumption that product_name and aisle_id can have alphanumeric values(we see aisle_ids in alphabetical, numerical or a combination of both in the usual stores like Safeway)
 
-* Future improvements - row level duplicates in orders file. Duplicates in products file doesn't impact the output. But duplicates can be possible in orders file and can lead to misleading order counts. 
-We can implement this if we have more information on the orders file - For example, a user can place two orders for the same product in the same order. This is a valid scenario.
+* ##Future improvements - row level duplicates in orders file. Duplicates in products.csv file don't impact the output. But duplicates in orders file and can lead to misleading order counts. 
+We can implement this if we have more information on the order_products.csv file - For example, a user can order 2 packets of Garlic Powder at once in the same order. If this comes as 2 records in the order_products.csv file, they will have the same order_id, product_id. This is not a duplicate and is a valid scenario.
 
 ## Dependencies
 
